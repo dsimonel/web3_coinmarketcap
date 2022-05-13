@@ -1,6 +1,10 @@
 {
   "name": "web3_coinmarketcap",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsimonel/web3_coinmarketcap.git"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,6 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "ethereumjs": "git+ssh://git@github.com/ethereumjs/ethereumjs-abi.git",
     "@faker-js/faker": "^6.3.1",
     "@openzeppelin/contracts": "^4.6.0",
     "@sanity/client": "^3.3.0",
