@@ -53,8 +53,8 @@ const SwapCryptoModal = () => {
             placeholder='Token to swap'
             onChange={e => setFromToken(e.target.value)}
             value={fromToken}
-          >
-            {coins.map(coin => {
+          > {console.log('Coins:',coins)}
+            {coins.map(coin => { console.log("Coin:", coin);
               if (!loadingCoins) {
                 return (
                   <option key={coin.id} value={coin.attributes.name}>

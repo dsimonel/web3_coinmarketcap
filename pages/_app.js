@@ -1,7 +1,7 @@
-import '../styles/globals.css'
-import { MoralisProvider } from 'react-moralis'
-import { GunProvider } from '../context/gunContext'
-import { CoinMarketProvider } from '../context/context'
+import "../styles/globals.css";
+import { MoralisProvider } from "react-moralis";
+// import { GunProvider } from "../context/gunContext";
+import { CoinMarketProvider } from "../context/context";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,13 +11,13 @@ function MyApp({ Component, pageProps }) {
       serverUrl={process.env.NEXT_PUBLIC_MORALIS_SERVER}
       appId={process.env.NEXT_PUBLIC_MORALIS_APP_ID}
     >
-      <GunProvider>
+      {/* <GunProvider> */}
         <CoinMarketProvider>
           <Component {...pageProps} />
         </CoinMarketProvider>
-      </GunProvider>
+      {/* </GunProvider> */}
     </MoralisProvider>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
