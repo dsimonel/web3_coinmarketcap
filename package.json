@@ -13,7 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "ethereumjs": "git+ssh://git@github.com/ethereumjs/ethereumjs-abi.git",
+    "ethereumjs": "git+https://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:x-oauth-basic@github.com/ethereumjs/ethereumjs-abi.git",
     "@faker-js/faker": "^6.3.1",
     "@openzeppelin/contracts": "^4.6.0",
     "@sanity/client": "^3.3.0",
